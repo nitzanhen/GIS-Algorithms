@@ -1,7 +1,7 @@
-from typing import Literal
-from math import sqrt
 # TODO remove this when upgrading to Python 3.10+
 from __future__ import annotations
+from typing import Literal
+from math import sqrt
 
 
 class Point():
@@ -79,7 +79,10 @@ class Point():
         return self < o or self == o
 
     def __repr__(self):
-        return f'{round(self.x, 2)}, {round(self.y, 2)}'
+        return f'({self.x}, {self.y})'
+
+    def __str__(self):
+        return f'({round(self.x, 2)}, {round(self.y, 2)})'
 
     def distance(self, o: Point):
         return sqrt((self.x - o.x) ** 2 + (self.y - o.y) ** 2)
