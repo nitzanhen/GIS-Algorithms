@@ -154,5 +154,6 @@ Thumbs.db
 ### vscode ###
 .vscode
 *.code-workspace
+.devcontainer
 
 # End of https://www.toptal.com/developers/gitignore/api/python,vscode
